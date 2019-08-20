@@ -49,13 +49,16 @@ if (cli.has('help')) {
 } else {
 	const format = cli.get('format') || 'json';
 	const options = {
-		count: Number(cli.get('count')),
+		count: Number(cli.get('count')) || 1,
 		mnemonic: format === 'csv' ? true : !cli.has('mnemonic'),
 		pad: cli.has('seed-pad'),
 		debug: cli.has('debug')
 	};
 	if (cli.has('key-size')) {
 		options.key = Number(cli.get('key-size'));
+		if (options.key < 16) {
+			options.pad = true;
+		}
 	}
 	let data = new Mass(options).mass();
 

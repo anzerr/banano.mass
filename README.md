@@ -16,8 +16,7 @@ cd banano.mass &&
 npm link
 ```
 
-### `Example`
-
+### `Cli`
 ``` bash
 bmass -c 100 > dump.json
 bmass --count 100 --format json --raw --mnemonic --seed-pad > dump.json
@@ -25,6 +24,32 @@ bmass -c 100 -f json -rmp > dump.json
 bmass -c 100 -f json -rmp --debug
 ```
 
+##### `Output`
+using `--format json`
+``` json
+{
+        "ban_3i1aq1cchnmbn9x5rsbap8b15akfh7wj7pwskuzi7ahz8oq6cobd99d4r3b7": [
+                "0000000000000000000000000000000000000000000000000000000000000000",
+                "abandon abandon ..."
+        ],
+		"ban_3i1aq1cchnmbn9x5rsbap8b15akfh7wj7pwskuzi7ahz8oq6cobd99d4r3b7": [
+                "0000000000000000000000000000000000000000000000000000000000000000",
+                "abandon abandon ..."
+        ]
+}
+```
+using `--format csv`
+``` csv
+ban_3i1aq1cchnmbn9x5rsbap8b15akfh7wj7pwskuzi7ahz8oq6cobd99d4r3b7,0000000000000000000000000000000000000000000000000000000000000000,abandon ...
+ban_3i1aq1cchnmbn9x5rsbap8b15akfh7wj7pwskuzi7ahz8oq6cobd99d4r3b7,0000000000000000000000000000000000000000000000000000000000000000,abandon ...
+```
+using `--debug`
+```
+options: { count: 500, mnemonic: true, key: 0, pad: true, debug: true }
+1.713sec for 500 accounts
+```
+
+### `Module`
 ``` javascript
 const Mass = require('banano.mass');
 
