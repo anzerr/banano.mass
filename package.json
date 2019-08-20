@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"simple": "bmass -c 100 > dump.json",
 		"test": "node test/index.js"
 	},
 	"bin": {
