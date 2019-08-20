@@ -1,0 +1,40 @@
+{
+	"name": "banano.mass",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "node test/index.js"
+	},
+	"bin": {
+		"bmass": "./bin/index.js"
+	},
+	"keywords": [],
+	"author": "anzerr",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^5.11.1",
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
+	},
+	"eslintConfig": {
+		"extends": "eslint-config-basic"
+	},
+	"dependencies": {
+		"banano.account": "git+https://github.com/anzerr/banano.account.git",
+		"bip39": "git+https://github.com/anzerr/bip39.git",
+		"cli.util": "git+https://github.com/anzerr/cli.util.git",
+		"console.color": "git+https://github.com/anzerr/console.color.git"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:anzerr/banano.mass.git"
+	},
+	"engines": {
+		"node": ">= 0.10.0"
+	},
+	"types": "index.d.ts",
+	"bugs": {
+		"url": "https://github.com/anzerr/banano.mass/issues"
+	},
+	"homepage": "https://github.com/anzerr/banano.mass#readme"
+}
