@@ -13,7 +13,7 @@ npm install --save git+https://github.com/anzerr/banano.mass.git
 ``` bash
 git clone git+https://github.com/anzerr/banano.mass.git &&
 cd banano.mass &&
-npm link
+npm i && npm link
 ```
 
 ### `Cli`
