@@ -1,4 +1,7 @@
 
+[logo]: https://banano.cc/assets/bananologo.svg "BANANO"
+![alt text][logo]
+
 ### `Intro`
 Cli to mass create Banano accounts with public address, mnemonic and seed;
 
