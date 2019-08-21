@@ -16,6 +16,5 @@ COPY --from=0 /app/node_modules /app/node_modules
 COPY --from=0 /app/bin /app/bin
 COPY --from=0 /app/index.js /app/index.js
 COPY --from=0 /app/package.json /app/package.json
-RUN cd /app && npm link
 WORKDIR /app
-ENTRYPOINT ["node", "dist/index.js"]
+ENTRYPOINT ["node", "bin/index.js"]

@@ -6,14 +6,19 @@
 Cli to mass create Banano accounts with public address, mnemonic and seed;
 
 #### `Install`
+- Node module
 ``` bash
 npm install --save git+https://github.com/anzerr/banano.mass.git
 ```
-
+- Cli
 ``` bash
 git clone git+https://github.com/anzerr/banano.mass.git &&
 cd banano.mass &&
 npm i && npm link
+```
+- Docker image
+``` bash
+docker run --rm -it anzerr/bmass -c 100 -f json -rmp > dump.json
 ```
 
 ### `Cli`
