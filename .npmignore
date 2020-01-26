@@ -1,0 +1,11 @@
+node_modules
+node_modules/*
+.tag*
+.github
+.vscode
+LICENSE
+README.md
+test.js
+test
+example
+Dockerfile

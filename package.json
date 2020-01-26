@@ -1,21 +1,32 @@
 {
 	"name": "banano.mass",
 	"version": "1.0.3",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"simple": "bmass -c 100 > dump.json",
-		"test": "node test/index.js"
+	"description": "🍌cli to mass create Banano accounts",
+	"keywords": [
+		"account",
+		"banano",
+		"cli",
+		"nodejs",
+		"util"
+	],
+	"homepage": "https://github.com/anzerr/banano.mass#readme",
+	"bugs": {
+		"url": "https://github.com/anzerr/banano.mass/issues"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:anzerr/banano.mass.git"
+	},
+	"license": "MIT",
+	"author": "anzerr",
+	"main": "index.js",
+	"types": "index.d.ts",
 	"bin": {
 		"bmass": "./bin/index.js"
 	},
-	"keywords": [],
-	"author": "anzerr",
-	"license": "MIT",
-	"devDependencies": {
-		"eslint": "5.11.1",
-		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
+	"scripts": {
+		"simple": "bmass -c 100 > dump.json",
+		"test": "node test/index.js"
 	},
 	"eslintConfig": {
 		"extends": "eslint-config-basic"
@@ -26,16 +37,11 @@
 		"cli.util": "git+https://github.com/anzerr/cli.util.git",
 		"console.color": "git+https://github.com/anzerr/console.color.git"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:anzerr/banano.mass.git"
+	"devDependencies": {
+		"eslint": "5.11.1",
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
 	"engines": {
 		"node": ">= 0.10.0"
-	},
-	"types": "index.d.ts",
-	"bugs": {
-		"url": "https://github.com/anzerr/banano.mass/issues"
-	},
-	"homepage": "https://github.com/anzerr/banano.mass#readme"
+	}
 }
