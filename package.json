@@ -1,6 +1,6 @@
 {
 	"name": "banano.mass",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "🍌cli to mass create Banano accounts",
 	"keywords": [
 		"account",
