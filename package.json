@@ -28,19 +28,13 @@
 		"simple": "bmass -c 100 > dump.json",
 		"test": "node test/index.js"
 	},
-	"eslintConfig": {
-		"extends": "eslint-config-basic"
-	},
 	"dependencies": {
 		"banano.account": "git+https://github.com/anzerr/banano.account.git",
 		"bip39": "git+https://github.com/anzerr/bip39.git",
 		"cli.util": "git+https://github.com/anzerr/cli.util.git",
 		"console.color": "git+https://github.com/anzerr/console.color.git"
 	},
-	"devDependencies": {
-		"eslint": "5.11.1",
-		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
-	},
+	"devDependencies": {},
 	"engines": {
 		"node": ">= 0.10.0"
 	}
